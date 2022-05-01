@@ -1,6 +1,6 @@
 
 
-#include "Motor.h"
+#include "Motor.hpp"
 
 
 Motor::Motor(int pin__dirA, int pin__dirB, int pin__pwm){
