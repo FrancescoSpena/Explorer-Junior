@@ -12,6 +12,4 @@ public:
     float getThreshold();
     void setThreshold(float __new_threshold__sensor);
     float getRead();
-
-    friend class LightSensorHandle;
 };

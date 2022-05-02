@@ -1,8 +1,6 @@
 
 #include "Bumper.hpp"
-
-int digitalRead(int pin){ return 0;} //Only for compile
-float analogRead(int pin){ return 0.f;} //Only for compile
+#include "Compilation.hpp"
 
 Bumper::Bumper(int __pin, bool __mod){ 
     this->pin = __pin; 
@@ -13,5 +11,5 @@ Bumper::Bumper(int __pin, bool __mod){
 }
 
 int Bumper::getRead(){
-    return this->mod == 0 ? this->read_value_digital = digitalRead(this->pin) : this->read_value_analog = (this->pin);
+    return this->mod == 0 ? this->read_value_digital = digitalRead(this->pin) : this->read_value_analog = analogRead(this->pin);
 }
