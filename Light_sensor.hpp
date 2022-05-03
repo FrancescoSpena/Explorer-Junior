@@ -12,4 +12,7 @@ public:
     float getThreshold();
     void setThreshold(float __new_threshold__sensor);
     float getRead();
+    int getPin(){
+        return this->analog_pin;
+    }
 };
